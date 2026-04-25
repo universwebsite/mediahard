@@ -14,3 +14,11 @@
 ## 🛡 Безопасность и Эксплуатация
 - **Цифровой паспорт:** Каждая единица товара привязана к результатам тестов, хранящимся в Ceph.
 - **Incident Management:** Ведется журнал инженерных инцидентов (см. `INCIDENT-001.md` в этой папке).
+```text
+[Internet] -> [Nginx Proxy] -> [Docker: Symfony App]
+
+                                      |
+                    [Docker: PostgreSQL] <-> [CephFS Storage]
+                                      |
+                    [Docker: Ollama AI]  <-> [Media Data]
+```
